@@ -7,18 +7,40 @@
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      max-width: 850px;
+      line-height: 1.65;
+      max-width: 920px;
       margin: 40px auto;
       padding: 0 20px;
       color: #222;
+      background: #fff;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #111;
+      line-height: 1.3;
     }
     h1 {
       border-bottom: 1px solid #ddd;
       padding-bottom: 0.4em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+    }
+    .note {
+      background: #f7f7f7;
+      border-left: 4px solid #ccc;
+      padding: 12px 16px;
+      margin: 1em 0;
     }
   </style>
 </head>
@@ -26,60 +48,148 @@
   <h1>Privacy Policy</h1>
 
   <p><strong>App name:</strong> Postleitzahlen Österreich</p>
-  <p><strong>Developer:</strong> Patrick Stratznig</p>
+  <p><strong>Developer / Controller:</strong> Patrick Stratznig</p>
   <p><strong>Contact:</strong> <a href="mailto:patrick.stratznig.dev@gmail.com">patrick.stratznig.dev@gmail.com</a></p>
   <p><strong>Last updated:</strong> May 5, 2026</p>
 
-  <h2>1. Overview</h2>
+  <div class="note">
+    <p>
+      This Privacy Policy explains how Postleitzahlen Österreich handles information when you use the app.
+      The app is designed as an offline-first Austrian postal code and location lookup app.
+    </p>
+  </div>
+
+  <h2>1. Who is responsible for data processing?</h2>
   <p>
-    This Privacy Policy explains how Postleitzahlen Österreich handles information when you use the app.
-    The app provides Austrian postal code and location lookup functionality. The main lookup
-    functionality works offline using data bundled with the app.
+    The person responsible for the app is:
+  </p>
+  <p>
+    <strong>Patrick Stratznig</strong><br />
+    Email: <a href="mailto:patrick.stratznig.dev@gmail.com">patrick.stratznig.dev@gmail.com</a>
+  </p>
+  <p>
+    For questions about privacy or data protection, you can contact the developer using the email address above.
   </p>
 
-  <h2>2. Data processed by the app</h2>
+  <h2>2. What does the app do?</h2>
   <p>
-    The app allows users to manually search for postal codes, places, and related location
-    information. Manual searches are processed locally on the device and are not sent to our
-    own servers.
-  </p>
-  <p>
-    The app may optionally access your device location if you tap the location button and grant
-    Android location permission. Location access is used only to determine your approximate or
-    current position in order to show nearby postal code or location information.
+    Postleitzahlen Österreich provides Austrian postal code and location lookup functionality.
+    Users can search for postal codes, places, and related location information. The core lookup
+    functionality works offline using postal code and location reference data bundled with the app.
   </p>
 
-  <h2>3. Location data</h2>
+  <h2>3. Summary of data processing</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Data involved</th>
+        <th>Purpose</th>
+        <th>Where processing happens</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manual postal code / place search</td>
+        <td>Search text entered by the user</td>
+        <td>To show matching postal codes, places, and related location information</td>
+        <td>Locally on the device</td>
+      </tr>
+      <tr>
+        <td>Optional location lookup</td>
+        <td>Device location, if the user grants Android location permission</td>
+        <td>To show nearby postal code or location information</td>
+        <td>Locally on the device for the app's lookup functionality</td>
+      </tr>
+      <tr>
+        <td>Advertising</td>
+        <td>
+          Data processed by the advertising provider, such as device information, advertising identifiers,
+          approximate location, app interaction data, diagnostics, and ad interaction data, depending on
+          consent settings, device settings, and provider configuration
+        </td>
+        <td>To display, personalize where permitted, limit, and measure advertisements</td>
+        <td>Processed by third-party advertising services, such as Google AdMob</td>
+      </tr>
+      <tr>
+        <td>Support or privacy requests</td>
+        <td>Email address and message content if you contact us</td>
+        <td>To respond to your request</td>
+        <td>Processed by us and by the email provider used to receive and respond to messages</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Manual searches</h2>
   <p>
-    Location access is optional. You can use the manual search features of the app without
-    granting location permission.
+    When you manually search for postal codes, places, or related location information, your search
+    input is processed locally on your device. Manual search queries are not sent to our own servers.
   </p>
   <p>
-    The app does not request background location access. Location permission is requested only
-    after you actively use a location-based feature in the app.
-  </p>
-  <p>
-    The app does not store your location history on our servers and does not sell your location
-    data. Location information is used on the device for the requested lookup functionality.
+    The app does not require you to create an account and does not associate your manual searches
+    with your name, email address, or any user profile operated by us.
   </p>
 
-  <h2>4. Offline data</h2>
+  <h2>5. Location permission and location data</h2>
   <p>
-    The app includes postal code and location reference data bundled with the app. This data is
-    used locally on your device. The app does not require an account and does not require an
-    internet connection for the core postal code lookup functionality.
+    The app may optionally request access to your device location if you actively use a location-based
+    feature, for example by tapping a location button. Location access is not required for manual
+    postal code or place search.
+  </p>
+  <p>
+    If you grant location permission, Android may provide approximate or precise location depending on
+    the permission option you choose. The app uses this location to determine nearby postal code or
+    location information.
+  </p>
+  <p>
+    The app itself does not send your location to our own servers for postal-code lookup. However,
+    advertising SDKs may process approximate location, device-related information, advertising identifiers,
+    or similar data as described in the advertising section of this Privacy Policy.
+  </p>
+  <p>
+    The app does not use your location to create a movement profile and does not store your location
+    history on our own servers.
+  </p>
+  <p>
+    The app does not request background location access. Location is only used for the requested
+    location-based lookup functionality while you are using the app.
+  </p>
+  <p>
+    You can withdraw location permission at any time in your Android system settings.
   </p>
 
-  <h2>5. Advertising</h2>
+  <h2>6. No background location</h2>
   <p>
-    The app may display small banner advertisements. Ads may be provided by third-party
+    The app is not designed to access your location in the background. It does not request Android's
+    background location permission and does not need background location for its core functionality.
+  </p>
+
+  <h2>7. Offline data</h2>
+  <p>
+    The app includes Austrian postal code and location reference data bundled with the app. This data
+    is used locally on your device. The core lookup functionality does not require an internet connection.
+  </p>
+  <p>
+    Updates to the bundled postal code and location reference data may be provided through normal app
+    updates.
+  </p>
+
+  <h2>8. Advertising and third-party services</h2>
+  <p>
+    The app displays small banner advertisements. These advertisements may be provided by third-party
     advertising services, such as Google AdMob.
   </p>
   <p>
-    Third-party advertising providers may process data such as device information, advertising
-    identifiers, approximate location, interaction data, diagnostics, and other information
-    according to their own privacy policies and consent settings. This processing is handled by
-    the advertising provider, not by our own servers.
+    Advertising providers may process information such as device information, advertising identifiers,
+    approximate location, app interaction data, diagnostic information, and information about ad views
+    or ad clicks. The exact data processed may depend on the advertising provider, your device settings,
+    your consent choices, and whether personalized, non-personalized, or limited ads are used.
+  </p>
+  <p>
+    We do not operate our own advertising server. Advertising-related processing is carried out by the
+    relevant advertising provider according to its own terms, privacy policy, consent mechanisms, technical
+    settings, and legal responsibilities.
   </p>
   <p>
     For more information about how Google uses data in advertising services, please visit:
@@ -88,60 +198,177 @@
     </a>
   </p>
 
-  <h2>6. Data sharing</h2>
+  <h2>9. Consent for users in the EEA, United Kingdom, and Switzerland</h2>
   <p>
-    We do not sell user data. We do not operate our own backend server for storing postal code
-    searches or location history.
+    For users in the European Economic Area, the United Kingdom, and Switzerland, the app uses a consent
+    mechanism where required for advertising-related processing. This may include consent for storing
+    or accessing information on your device and for using personal data, such as the advertising ID, for
+    personalized advertising.
   </p>
   <p>
-    Data may be processed by third-party services used in the app, especially advertising
-    services, as described above. These third parties process data according to their own
-    privacy policies and legal responsibilities.
-  </p>
-
-  <h2>7. Data retention and deletion</h2>
-  <p>
-    The app does not create user accounts and does not store personal account data on our
-    servers. The app does not store your location history on our servers.
-  </p>
-  <p>
-    You can delete locally stored app data at any time through your Android system settings,
-    or by uninstalling the app.
+    Depending on your choices, the app may show personalized ads, non-personalized ads, or limited ads.
+    You can change or withdraw your consent through the privacy options provided in the app, where available,
+    or through relevant Android or Google settings.
   </p>
 
-  <h2>8. Permissions</h2>
+  <h2>10. Analytics and crash reporting</h2>
   <p>
-    The app may request location permission if you use the location feature. This permission is
-    used only to provide location-based lookup functionality. The app does not request
-    background location permission.
+    The app does not use our own analytics system to track how individual users use the app.
+  </p>
+  <p>
+    Third-party services included in the app, especially advertising services such as Google AdMob, may
+    process diagnostic, interaction, or technical information according to their own privacy policies,
+    consent settings, and technical configuration.
+  </p>
+  <p>
+    If separate analytics, crash reporting, or similar services are added in the future, this Privacy
+    Policy will be updated accordingly.
   </p>
 
-  <h2>9. Children</h2>
+  <h2>11. Legal bases for processing under the GDPR</h2>
   <p>
-    The app is not specifically directed at children. If the app is later made available to
-    children or families, this Privacy Policy and the app's data handling practices may need to
-    be updated accordingly.
+    Where the General Data Protection Regulation applies, the following legal bases may be relevant:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Processing activity</th>
+        <th>Possible legal basis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manual postal code and place search processed locally on the device</td>
+        <td>
+          No personal data is intentionally collected by us. Where processing is legally relevant,
+          it is necessary to provide the requested app functionality.
+        </td>
+      </tr>
+      <tr>
+        <td>Optional location lookup after the user activates the location feature</td>
+        <td>
+          User consent through Android permission and user-initiated use of the feature; performance of
+          the requested app functionality
+        </td>
+      </tr>
+      <tr>
+        <td>Advertising and related third-party processing</td>
+        <td>
+          Consent where required by law, especially for personalized advertising or access to device
+          identifiers; otherwise legitimate interest or another applicable legal basis depending on the
+          provider's configuration and applicable law
+        </td>
+      </tr>
+      <tr>
+        <td>Responding to privacy or support requests sent by email</td>
+        <td>
+          Legitimate interest in responding to requests; compliance with legal obligations where applicable
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>12. Data sharing</h2>
+  <p>
+    We do not sell your personal data. We do not operate our own backend server for storing postal code
+    searches, manual search history, user accounts, or location history.
+  </p>
+  <p>
+    Data may be processed by third-party services used in the app, especially advertising services such
+    as Google AdMob. These third parties process data according to their own privacy policies, technical
+    settings, consent mechanisms, and legal responsibilities.
   </p>
 
-  <h2>10. Security</h2>
+  <h2>13. Data retention</h2>
   <p>
-    The app is designed to minimize data processing by performing the core lookup functionality
-    locally on the device. Any data handled by third-party services, such as advertising
-    providers, is subject to those providers' security practices.
+    The app does not create user accounts and does not store personal account data on our own servers.
+    The app does not store your location history on our own servers.
+  </p>
+  <p>
+    Locally stored app data, such as app settings, consent choices, or cached technical data, may remain
+    on your device until you clear the app data or uninstall the app. Advertising providers may retain
+    advertising-related data according to their own privacy policies and retention rules.
+  </p>
+  <p>
+    If you contact us by email, we may retain your message and email address for as long as necessary
+    to respond to your request and to document the communication where reasonably necessary.
   </p>
 
-  <h2>11. Changes to this Privacy Policy</h2>
+  <h2>14. Deletion and control options</h2>
   <p>
-    We may update this Privacy Policy if the app changes, for example if new features,
-    permissions, analytics, advertising providers, or online services are added. The updated
-    version will be published on this page.
+    You can control or delete data in the following ways:
+  </p>
+  <ul>
+    <li>You can use the app without granting location permission by using manual search.</li>
+    <li>You can withdraw location permission in Android system settings.</li>
+    <li>You can clear the app's locally stored data in Android system settings.</li>
+    <li>You can uninstall the app to remove the app and its local data from your device.</li>
+    <li>You can manage advertising personalization and advertising ID settings in your Android or Google settings.</li>
+    <li>You can change or withdraw advertising consent through the app's privacy options where available.</li>
+  </ul>
+
+  <h2>15. Your rights</h2>
+  <p>
+    Depending on your location and applicable law, you may have rights regarding your personal data.
+    Under the GDPR, these may include the right of access, rectification, erasure, restriction of
+    processing, data portability, objection, and the right to withdraw consent where processing is based
+    on consent.
+  </p>
+  <p>
+    Because the core app functionality is designed to work locally and without user accounts, we may not
+    have personal data that can be directly associated with you. If you contact us by email, we may process
+    your email address and the content of your message in order to respond.
+  </p>
+  <p>
+    To exercise privacy rights in relation to data processed by us, contact:
+    <a href="mailto:patrick.stratznig.dev@gmail.com">patrick.stratznig.dev@gmail.com</a>.
+    For data processed by third-party advertising providers, you may also need to contact the relevant
+    provider directly or use the privacy controls offered by that provider.
+  </p>
+  <p>
+    If you believe that your personal data has been processed unlawfully, you have the right to lodge a
+    complaint with a supervisory authority. In Austria, this is the Austrian Data Protection Authority
+    (Österreichische Datenschutzbehörde).
   </p>
 
-  <h2>12. Contact</h2>
+  <h2>16. Children</h2>
   <p>
-    If you have questions about this Privacy Policy or about privacy in Postleitzahlen Österreich, you can
-    contact us at:
-    <a href="mailto:patrick.stratznig.dev@gmail.com">patrick.stratznig.dev@gmail.com</a>
+    The app is not specifically directed at children. The app is intended as a general postal code and
+    location lookup tool. If the app is later made available specifically to children or families, this
+    Privacy Policy and the app's data handling practices may need to be updated.
+  </p>
+
+  <h2>17. Security</h2>
+  <p>
+    The app is designed to minimize data processing by performing the core lookup functionality locally
+    on the device. However, no app, device, or transmission method can be guaranteed to be completely
+    secure. Third-party services, such as advertising providers, are responsible for their own security
+    practices.
+  </p>
+
+  <h2>18. International data transfers</h2>
+  <p>
+    The core postal code lookup functionality is performed locally on your device. If third-party
+    advertising services are used, advertising-related data may be processed on servers located in
+    countries outside your country of residence. Such processing is governed by the relevant third-party
+    provider's privacy policy and applicable legal safeguards.
+  </p>
+
+  <h2>19. Changes to this Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy if the app changes, for example if new features, permissions,
+    analytics, advertising providers, online services, or data processing activities are added. The
+    updated version will be published on this page with a new "Last updated" date.
+  </p>
+
+  <h2>20. Contact</h2>
+  <p>
+    If you have questions about this Privacy Policy or about privacy in Postleitzahlen Österreich, you
+    can contact:
+  </p>
+  <p>
+    <strong>Patrick Stratznig</strong><br />
+    Email: <a href="mailto:patrick.stratznig.dev@gmail.com">patrick.stratznig.dev@gmail.com</a>
   </p>
 </body>
 </html>
