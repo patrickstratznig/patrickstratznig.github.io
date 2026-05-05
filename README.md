@@ -1,1 +1,0 @@
-# patrickstratznig.github.io
